@@ -1,32 +1,71 @@
-# Análisis de Datos COVID-19 en Perú
-Este proyecto realiza un análisis exploratorio de los datos de pacientes asegurados en Perú durante la pandemia de COVID-19. El objetivo es obtener información relevante sobre la distribución de casos por edad, sexo, tipo de seguro, y ubicación geográfica.
+# 📊 Análisis Exploratorio de Datos de COVID-19 en Perú 🇵🇪
+
+Este proyecto utiliza un conjunto de datos de contagios por COVID-19 en Perú para realizar un análisis exploratorio con Python y Pandas. El objetivo es identificar patrones relevantes, realizar limpieza de datos y generar visualizaciones claras que ayuden a comprender mejor la evolución de la pandemia en el país.
+
+---
 
 ## 📁 Estructura del proyecto
 
-covid-peru-analysis/
-data
-    covid_peru.csv
-notebooks
-    covid_analysis.ipynb
-env/
-requirements.txt
-README.md
-    
-## Contenido del análisis
+- `covid_peru.csv`: Dataset original.
+- `covid_peru_limpio.csv`: Dataset procesado y limpio.
+- `covid_analysis.ipynb`: Notebook principal con análisis y visualizaciones.
+- `img/`: Carpeta con las imágenes exportadas desde el notebook.
+- `.ipynb_checkpoints/`: (Ignorado por Git) Archivos temporales de Jupyter.
 
-- Carga de datos desde archivo `.csv`
-- Limpieza de columnas innecesarias
-- Conversión de edades a tipo numérico
-- Análisis estadístico básico de la edad
-- Visualizaciones de:
-  - Distribución de edad
-  - Frecuencia de sexo y estado civil
-  - Casos por departamento
-    
-## Tecnologías y librerías
+---
 
-- Python 3.10
+## 🧼 Limpieza de Datos
+
+- Conversión de fechas al formato datetime.
+- Eliminación de valores nulos y datos irrelevantes.
+- Corrección de tipos de datos numéricos y categóricos.
+- Renombramiento de columnas para mejor comprensión.
+
+---
+
+## 📈 Análisis Realizado
+
+- Evolución diaria de casos confirmados.
+- Casos acumulados por región o departamento.
+- Detección de outliers y picos de contagios.
+- Gráficos de línea, barras y tablas resumen.
+
+---
+
+## 📸 Visualizaciones
+
+Ejemplo:  
+![Evolución de contagios por día](img/grafico_linea_covid.png)
+
+(Agrega más imágenes si deseas: gráficos de barras, tablas, etc.)
+
+---
+
+## 🚀 Herramientas Utilizadas
+
+- Python 3.x
+- Jupyter Notebook
 - Pandas
 - Matplotlib
 - Seaborn
-- Jupyter Notebook
+- NumPy
+
+---
+
+## 📌 Conclusiones
+
+- Los contagios se concentran en determinadas fechas clave.
+- Se identificaron problemas en los datos originales (nulos, errores de tipo).
+- El análisis permite tener una vista clara de la evolución de la pandemia.
+
+---
+
+## 🧑‍💻 Autor
+
+- Roy Alarcón – [@LemonAgrio](https://github.com/LemonAgrio)
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT – ver el archivo [LICENSE](LICENSE) para más detalles.
